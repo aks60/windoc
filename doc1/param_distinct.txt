@@ -1,5 +1,5 @@
-
-
+﻿
+///////////////////////////////////////////////////
    HashMap<String, ArrayList> hm = new HashMap();
    for (ParamList.Ps4 ps4 :  ParamList.Ps4.values()) {
       if(hm.get(ps4.text()) == null) {
