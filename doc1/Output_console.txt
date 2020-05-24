@@ -1,0 +1,199 @@
+﻿      //////////////////////////////////////////////////////////
+	//вывод уникального индекса
+	public static void write_txt2(Constructive c, ArrayList<Specification> specList) {
+
+        Specification.sort(specList);
+        int npp = 0;
+        String format = "%-6s%-46s%-26s%-12s%-12s%-12s";
+        Object str[] = {"Code", "Name", "Art", "areaId", "elemId", "elemType"};
+        System.out.printf(format, str);
+        System.out.println();
+        float total = 0;
+        for (Specification s : specList) {
+            Object str2[] = {String.valueOf(++npp), s.name, s.artikl, s.areaId, s.elemId, s.elemType};
+            total = total + s.weight;
+            System.out.printf(format, str2);
+            System.out.println();
+        }
+        System.out.println("Масса окна " + total + " кг.");
+    }
+	///////////////////////////////////////////////////////
+	
+	    //вывод на тестирование в DLL
+	    public static void write_txt(Constructive c, ArrayList<Specification> specList) {
+
+        String path = "C:\\Java\\specific_compare.txt";
+        try (PrintStream printStream = new PrintStream(path, "windows-1251")) {
+            int npp = 0;
+            String format = "%-6s%-46s%-32s%-32s%-32s%-32s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s" +
+                    "%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s%-16s %n";
+            Object str[] = {"Code", "Name", "Art", "BaseColor", "InsideColor", "OutsideColor", "Count", "Quantity",
+                    "UM", "InPrice", "CostPrice", "OutPrice", "OutTotal", "Width", "Height", "Weight",
+                    "Angle", "ComplType", "ElemID", "ElemType", "ObjectID", "ObjectType", "AreaID", "AreaType",
+                    "AccessoryID", "PriceGRP", "PrintGroup", "CutAngle1", "CutAngle2", "Composite", "Усл.окна"};
+            String str3 = new String(("Спецификация (" + specList.size() + " строк):").getBytes());
+            printStream.println(str3);
+            printStream.printf(format, str);
+            for (Specification s : specList) {
+
+                Object str2[] = {String.valueOf(++npp), s.name, s.artikl, Colslst.get2(c, s.colorBase).cname,
+                        Colslst.get2(c, s.colorInternal).cname, Colslst.get2(c, s.colorExternal).cname, String.valueOf(s.count), String.valueOf(s.quantity),
+                        MeasUnit.getName(s.unit), "0", String.valueOf(s.inPrice), String.valueOf(s.outPrice), String.valueOf(s.inCost),
+                        String.valueOf(s.width), String.valueOf(s.height), "0", "0", "0", String.valueOf(s.id), "0", "0", "0", "0", "0",
+                        "0", "0", "0", String.valueOf(s.anglCut2), String.valueOf(s.anglCut1), "0", "0"};
+
+                printStream.printf(format, str2);
+                System.out.printf(format, str2);
+            }
+            float totalVal = 0;
+            for (Specification s : specList) {
+                totalVal = totalVal + s.outCost;
+            }
+            String str4 = new String(("Суммарная цена = " + totalVal).getBytes());
+            printStream.printf("%-120s", str4);
+            System.out.println(str4);
+
+        } catch (IOException ex) {
+            System.err.println("Ошибка Specification.write_txt() " + ex);
+        }
+    }
+	///////////////////////////////////////////////////////
+	//тестирование парам. спецификации
+	    public static void test_param(int[] paramArr) {
+
+        HashMap<String, ArrayList> hm = new HashMap();
+        for (int index = 0; index < paramArr.length; ++index) {
+            Integer param = paramArr[index];
+            String code = (String.valueOf(param).length() == 4) ? String.valueOf(param).substring(1, 4) : String.valueOf(param).substring(2, 5);
+            if (hm.get(code) == null) {
+                ArrayList<Integer> value = new ArrayList();
+                value.add(Integer.valueOf(code));
+                value.add(param);
+                hm.put(code, value);
+            } else {
+                ArrayList arr = hm.get(code);
+                arr.add(param);
+            }
+        }
+        ArrayList<ArrayList<Integer>> arr = new ArrayList();
+        for (Map.Entry<String, ArrayList> el : hm.entrySet()) {
+            arr.add(el.getValue());
+        }
+        arr.sort(new Comparator<ArrayList<Integer>>() {
+
+            public int compare(ArrayList a, ArrayList b) {
+                return (Integer) a.get(0) - (Integer) b.get(0);
+            }
+        });
+        for (ArrayList el : arr)
+            System.out.println(el);
+    }
+	///////////////////////////////////////////////////
+
+	//соединения на консоль
+    public static void print_joining(HashMap<String, ElemJoinig> hmJoinElem) {
+
+        System.out.println("BEGIN_JOIN");
+        for (Map.Entry<String, ElemJoinig> entry : hmJoinElem.entrySet()) {
+            System.out.println("id=" + entry.getValue().id +
+                    " JOIN=" + entry.getValue().varJoin + "  POINT:" + entry.getKey() + ", " +
+                    getSId("LEFT", entry.getValue().elemJoinLeft) + " , " +
+                    getSId("RIGHT", entry.getValue().elemJoinRight) + ", " +
+                    getSId("TOOP", entry.getValue().elemJoinTop) + ", " +
+                    getSId("BOTTOM", entry.getValue().elemJoinBottom)); // + ", " +
+                    //"art1:" + entry.getValue().joinElement1.articlesRec.anumb + ", " +
+                    //"art2:" + entry.getValue().joinElement2.articlesRec.anumb);
+        }
+        System.out.println("END_JOIN");
+    }	
+//////////////////////////////////////////////////////////
+
+//сравнение спецификации с профстроем
+public static void compareIWin(ArrayList<Specification> spcList, String prj, boolean frame) {
+
+        //TODO нужна синхронизация функции
+        Float iwinTotal = 0f, jarTotal = 0f;
+        String path = "src\\resource\\p" + prj + ".xls";
+        Specification.sort(spcList);
+        Map<String, Float> hmDll = new LinkedHashMap();
+        Map<String, Float> hmJar = new LinkedHashMap();
+        Map<String, String> hmJarArt = new LinkedHashMap();
+        for (Specification spc : spcList) {
+
+            String key = spc.name.trim().replaceAll("[\\s]{1,}", " ");
+            Float val = (hmJar.get(key) == null) ? 0.f : hmJar.get(key);
+            hmJar.put(key, val + spc.inCost);
+            hmJarArt.put(key, spc.artikl);
+        }
+        Workbook w;
+        File inputWorkbook = new File(path);
+        try {
+            w = Workbook.getWorkbook(inputWorkbook);
+            Sheet sheet = w.getSheet(0);
+            for (int i = 5; i < sheet.getRows(); i++) {
+
+                String art = sheet.getCell(1, i).getContents().trim();
+                String key = sheet.getCell(2, i).getContents().trim().replaceAll("[\\s]{1,}", " ");
+                String val = sheet.getCell(10, i).getContents();
+                if (key.isEmpty() || art.isEmpty() || val.isEmpty()) continue;
+
+                val = val.replaceAll("[\\s|\\u00A0]+", "");
+                val = val.replace(",", ".");
+                Float val2 = (hmDll.get(key) == null) ? 0.f : hmDll.get(key);
+                try {
+                    Float val3 = Float.valueOf(val) + val2;
+                    hmDll.put(key, val3);
+                    hmJarArt.put(key, art);
+                } catch (Exception e) {
+                    System.err.println("Ошибка Main.compareIWin " + e);
+                    continue;
+                }
+            }
+            if (frame == true) {
+                System.out.printf("%-64s%-24s%-16s%-16s%-16s", new Object[]{"Name", "Artikl", "Dll", "Jar", "Delta"});
+                System.out.println();
+                for (Map.Entry<String, Float> entry : hmDll.entrySet()) {
+                    String key = entry.getKey();
+                    Float val1 = entry.getValue();
+                    Float val2 = (hmJar.get(key) == null) ? 0.f : hmJar.get(key);
+                    hmJar.remove(key);
+                    System.out.printf("%-64s%-24s%-16.2f%-16.2f%-16.2f", new Object[]{key, hmJarArt.get(key), val1, val2, Math.abs(val1 - val2)});
+                    System.out.println();
+                    jarTotal = jarTotal + val2;
+                    iwinTotal = iwinTotal + val1;
+                }
+                System.out.println();
+                if (hmJar.isEmpty() == false)
+                    System.out.printf("%-72s%-24s%-20s", new Object[]{"Name", "Artikl", "Value"});
+                System.out.println();
+                for (Map.Entry<String, Float> entry : hmJar.entrySet()) {
+                    String key = entry.getKey();
+                    Float value3 = entry.getValue();
+                    System.out.printf("%-72s%-24s%-16.2f", "Лишние: " + key, hmJarArt.get(key), value3);
+                    System.out.println();
+                    jarTotal = jarTotal + value3;
+                }
+            } else {
+                for (Map.Entry<String, Float> entry : hmDll.entrySet()) {
+                    String key = entry.getKey();
+                    Float val1 = entry.getValue();
+                    Float val2 = (hmJar.get(key) == null) ? 0.f : hmJar.get(key);
+                    hmJar.remove(key);
+                    jarTotal = jarTotal + val2;
+                    iwinTotal = iwinTotal + val1;
+                }
+                for (Map.Entry<String, Float> entry : hmJar.entrySet()) {
+                    String key = entry.getKey();
+                    Float value3 = entry.getValue();
+                    jarTotal = jarTotal + value3;
+                }
+            }
+            System.out.printf("%-18s%-18s%-18s%-12s", "Prj=" + prj, "iwin=" + String.format("%.2f", iwinTotal), "jar="
+                    + String.format("%.2f", jarTotal), "dx=" + String.format("%.2f", Math.abs(iwinTotal - jarTotal)));
+            System.out.println();
+
+        } catch (Exception e2) {
+            System.err.println("Ошибка Main.compareIWin " + e2);
+        }
+    }
+////////////////////////////////////////////////////////////////////	

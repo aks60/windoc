@@ -1,0 +1,268 @@
+//////////////////////////////////////////////////
+  import java.awt.* ; 
+  import javax.swing.* ; 
+  import java.io.* ; 
+  import javax.imageio.ImageIO ; 
+  import java.awt.image.BufferedImage ; 
+  public class Panel extends JPanel { 
+  /** 
+  * Save the Panel as image with the name and the type in parameters 
+  * 
+  * @param name name of the file 
+  * @param type type of the file 
+  */ 
+  public void saveImage ( String name , String type ) { 
+  BufferedImage image = new BufferedImage (getWidth(),getHeight(), BufferedImage . TYPE_INT_RGB ); 
+  Graphics2D g2 = image .  createGraphics(); 
+  paint(g2); 
+  try { 
+  ImageIO .  write(image, type, new File (name + " . " + type)); 
+  } catch ( Exception e) { 
+  e .  printStackTrace(); 
+  } 
+  } 
+  public void paintComponent ( Graphics g ) { 
+  super .  paintComponent(g); 
+  } 
+ } 
+
+////////////////////////////////////////////////////
+public class ImagePanel extends JPanel{
+
+    private BufferedImage image;
+
+    public ImagePanel() {
+       try {                
+          image = ImageIO.read(new File("image name and path"));
+       } catch (IOException ex) {
+            // handle exception...
+       }
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(image, 0, 0, this); // see javadoc for more info on the parameters            
+    }
+
+}
+/////////////////////////////////////////////////////////
+Если вы используете JPanels, то, вероятно, работаете с Swing. Попробуй это:
+
+BufferedImage myPicture = ImageIO.read(new File("path-to-file"));
+JLabel picLabel = new JLabel(new ImageIcon(myPicture));
+add(picLabel);
+////////////////////////////////////////////////////////
+Путь Фреда Хаслама работает отлично. Однако у меня возникли проблемы с путем к файлу, поскольку я хочу сослаться на изображение в моем банке. Для этого я использовал:
+
+BufferedImage wPic = ImageIO.read(this.getClass().getResource("snow.png"));
+JLabel wIcon = new JLabel(new ImageIcon(wPic));
+/////////////////////////////////////////////////////////
+Вы можете создать подкласс JPanel - вот выдержка из моей ImagePanel, которая помещает изображение в любое из 5 мест: верхнее / левое, верхнее / правое, среднее / среднее, нижнее / левое или нижнее / правое:
+
+protected void paintComponent(Graphics gc) {
+    super.paintComponent(gc);
+
+    Dimension                           cs=getSize();                           // component size
+
+    gc=gc.create();
+    gc.clipRect(insets.left,insets.top,(cs.width-insets.left-insets.right),(cs.height-insets.top-insets.bottom));
+    if(mmImage!=null) { gc.drawImage(mmImage,(((cs.width-mmSize.width)/2)       +mmHrzShift),(((cs.height-mmSize.height)/2)        +mmVrtShift),null); }
+    if(tlImage!=null) { gc.drawImage(tlImage,(insets.left                       +tlHrzShift),(insets.top                           +tlVrtShift),null); }
+    if(trImage!=null) { gc.drawImage(trImage,(cs.width-insets.right-trSize.width+trHrzShift),(insets.top                           +trVrtShift),null); }
+    if(blImage!=null) { gc.drawImage(blImage,(insets.left                       +blHrzShift),(cs.height-insets.bottom-blSize.height+blVrtShift),null); }
+    if(brImage!=null) { gc.drawImage(brImage,(cs.width-insets.right-brSize.width+brHrzShift),(cs.height-insets.bottom-brSize.height+brVrtShift),null); }
+    }
+	//////////////////////////////////////////////////////////////////////
+@Override
+protected void paintComponent(Graphics g) {
+    super.paintComponent(g);
+    g.drawImage(image, 0, 0, this); 
+}
+//////////////////////////////////////////////////////////////////////////////
+
+Форум программистов, компьютерный форум, киберфорум
+Наши страницы
+Vkontakte,
+Facebook, Twitter
+Java: GUI, Графика
+Форум программистов и сисадминов Киберфорум > Форум программистов > Java > Java: GUI, Графика
+Войти
+Регистрация
+Восстановить пароль
+Тесты	Блоги 	Сообщество 	Поиск 	 
+
+ 
+Рейтинг 4.90/10: Рейтинг темы: голосов - 10, средняя оценка - 4.90
+elusionist
+7 / 7 / 0
+Регистрация: 10.01.2013
+Сообщений: 40
+1
+Графика в Java
+12.03.2013, 21:07. Просмотров 1781. Ответов 3
+Метки нет (Все метки)
+Добрый день.
+Возник вот такой вот вопрос, он, наверное, и не сложный, но вот решения оптимального я, пока, найти не могу.
+Допустим, хотим создать абстрактный класс для фигуры:
+JavaВыделить код
+
+abstract class Figure {
+    private int x = 0;
+    private int y = 0;
+    private int width= 0;
+    private int hight = 0;
+    
+    Figure (int x, int y, int width, int hight) {
+        this.x = x;
+        this.y = y;
+   
+    }
+    abstract void paintFigure(Graphics g);
+ 
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+    public int getWidth() {
+        return width;
+    }
+    public int getHight() {
+        return hight;
+    }
+}
+Далее создаем класс уже конкретной фигуры (прямоугольник), который наследует наш абстрактный класс:
+JavaВыделить код
+
+class Rect extends Figure {
+    
+    Rect(int x, int y, int width, int hight) {
+        super(x, y, width, hight);
+    }
+ 
+    void paintFigure(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.drawRect(getX(), getY(), getWidth, getHight);      
+    }
+}
+А вот теперь у меня возникает сложность: как панели передать фигуру и можно ли так делать?
+Заранее спасибо за ответы.
+
+Добавлено через 42 минуты
+Получилось так:
+абстрактный класс наследует у меня JPanel
+в нем же этот метод: paintFigure(Graphics g) - я так понял нельзя использовать, вернее можно, но работать не будет, я перегрузил метод paintComponent(Graphics g). И вуаля, класс с фигурой у нас теперь может быть помещен на фрейм.
+0
+QA
+Эксперт
+41792 / 34177 / 6122
+Регистрация: 12.04.2006
+Сообщений: 57,940
+12.03.2013, 21:07
+Ответы с готовыми решениями:
+ Построение графика в Java
+Здравствуйте! Возникла необходимость построить график. Пользуюсь средой IntelliJ IDEA. Подскажите,...
+
+построение графика функции на java
+Помогите, пожалуйста, построить график y=C*tg(A*x+B)
+
+Графика в java: вывод графиков в Swing
+Практикуюсь с графикой в java. Если конкретно, то пытаюсь нарисовать графики функций. Решил...
+
+Java и OpenGL. Java и 3Д графика
+Здравствуйте, уважаемые форумчане!:) Хочу создать небольшую 3Д игрушку на Java. Давно слышал...
+
+Графика Java
+Здравствуйте прошу помочь литературой или возможно есть видео как написать нужный мне код, или же...
+
+3
+
+exiqa
+486 / 332 / 71
+Регистрация: 24.12.2011
+Сообщений: 591
+12.03.2013, 21:43	2
+вот не уважаете Вы труд разработчиков. В пакете java.awt.geom уже есть готовенькие классы фигур, бери да пользуйся, но Вы все же предпочитаете изобретать велосипед 
+0
+Fonduee
+Музыка нас Связала
+231 / 231 / 52
+Регистрация: 26.03.2008
+Сообщений: 616
+12.03.2013, 22:00	3
+Цитата Сообщение от exiqa Посмотреть сообщение
+вот не уважаете Вы труд разработчиков. В пакете java.awt.geom уже есть готовенькие классы фигур, бери да пользуйся, но Вы все же предпочитаете изобретать велосипед 
+Одно из любимых заданий в школах и ВУЗах заставить учащихся писать велосипеды, не используя стандартные конструкции. Не кидать же их на реальные проекты всё таки, а так азы хоть усвоят.
+0
+elusionist
+7 / 7 / 0
+Регистрация: 10.01.2013
+Сообщений: 40
+13.03.2013, 00:16  [ТС]	4
+Цитата Сообщение от exiqa Посмотреть сообщение
+вот не уважаете Вы труд разработчиков. В пакете java.awt.geom уже есть готовенькие классы фигур, бери да пользуйся, но Вы все же предпочитаете изобретать велосипед
+Да я уважаю и понимаю все не нужность данной работы. Но все же, задание стоит именно так: сначала абстрактный класс, в котором прописаны нужные поля и метод для прорисовки фигуры. Далее создаем класс с конкретной фигурой, который наследует абстрактный класс. Вроде как бы все понятно, но у меня вызвало сложности то, что я не знал как потом с этим методом для прорисовки быть дальше. как его разместить на панели и потом данную панель отправить на фрейм.
+
+Добавлено через 1 час 57 минут
+Что то голова уже совсем не варит, что и где я не правильно делаю.
+Укажите пожалуйста на ошибки и дайте свои рекомендации по организации кода
+JavaВыделить код
+
+import java.awt.*;
+import javax.swing.*;
+abstract class Figure extends JPanel {
+    private int x = 0;
+    private int y = 0;
+    
+    Figure (int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    protected abstract void paintComponent(Graphics g);
+ 
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+
+import java.awt.*;
+import javax.swing.*;
+ 
+public class PaintingFigure {
+    public static void main(String[] args) {
+        Rect r = new Rect(50, 50, 10, 250);
+        JFrame frame = new JFrame("Figures");
+        frame.setSize(500, 500);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(r);
+    }
+}
+class Rect extends Figure {
+    private int hight;
+    private int width;
+ 
+    public int getHight() {
+        return hight;
+    }
+    public int getWidth() {
+        return width;
+    }
+    
+    Rect(int x, int y, int width, int hight) {
+        super(x, y);
+        this.hight = hight;
+        this.width = width;
+    }
+ 
+    protected void paintComponent(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.drawRect(getX(), getY(), getWidth(), getHight());
+        g2d.fillRect(getX(), getY(), getWidth(), getHight());
+        g2d.setColor(Color.YELLOW);
+    }
+}

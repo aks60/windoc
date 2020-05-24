@@ -1,0 +1,1665 @@
+    public boolean check(ElemSimple elemSimple, List<Record> tableList) {
+        for (Record paramRec : tableList) {
+            switch (paramRec.getInt(PAR1)) {
+
+                case 0:  //Зрачение по умолчанию 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1005:  //Контейнер имеет тип Артикула1/Артикула2
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1008:  //Эффективное заполнение изд., мм
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1010:  //Внешнее соединение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1011:  //Для Артикула 1 указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1012:  //Для Артикула 2 указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1013:  //Для Артикулов не указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1020:  //Ограничение угла к горизонту, °
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1035:  //Уровень створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1039:  //Для типа открывания 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1040:  //Размер, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1043:  //Ограничение габарита контура, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1090:  //Смещение по толщине, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 1085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2003:  //Угол варианта 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2005:  //Контейнер имеет тип Артикула1/Артикула2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2012:  //Для Артикулов указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2013:  //Для Артикулов не указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2015:  //Ориентация Артикула1/Артикула2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2020:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2030:  //Припуск Артикула1/Артикула2 , мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2055:  //Продолжение общей арки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2061:  //Отступ для Артикула1/Артикула2, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2066:  //Расчет углов реза профилей 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2064:  //Поправка для состава Арт.1/Арт.2, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 2085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3002:  //Вид L-образного варианта 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3003:  //Угол варианта 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3005:  //Контейнер имеет тип Артикула1/Артикула2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3012:  //Для Артикулов указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3013:  //Для Артикулов не указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3015:  //Ориентация Артикула1/Артикула2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3020:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3030:  //Усечение Артикула1/Артикула2, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3031:  //Усечение Артикула1/Артикула2, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3045:  //Расстояние от уровня деления, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3050:  //Припуск Артикула1/Артикула2, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3064:  //Поправка для состава Арт.1/Арт.2 , мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3083:  //Проходит уровень деления 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3088:  //Вариант соединения для стойки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 3085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4002:  //Вид Т-образного варианта (простое Т-обр. крестовое Т-обр. сложное Y-обр.) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4005:  //Контейнер имеет тип Артикула1/Артикула2  
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4010:  //Внешнее соединение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4011:  //Для Артикула 1 указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4012:  //Для Артикула 2 указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4013:  //Для Артикулов не указан состав 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4015:  //Ориентация Артикула1/Артикула2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4018:  //От ручки не менее, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4020:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4040:  //Размер от оси профиля, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4044:  //Размер от края пакета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4045:  //Расстояние от уровня деления, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4046:  //Длина Артикула 1, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4050:  //Припуск Артикула 1, мм. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4061:  //Максимальный размер шва, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4064:  //Поправка для состава, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4083:  //Проходит уровень деления 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4099:  //Трудозатраты, ч/ч.                 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4800:  //Код обработки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 4801:  //Доп.обработки
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7078:  //Комплект одно текстурный 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7081:  //Если ширина комплекта, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7098:  //Бригада, участок
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 7099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8050:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8065:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8070:  //Ширина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8075:  //Углы реза 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8081:  //Ширина комплекта, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8083:  //Набрать_длину_с_нахлестом, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8098:  //Бригада, участок
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 8097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9050:  //Поправка длины, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9055:  //Поправка ширины, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9065:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9070:  //Ширина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9081:  //Если ширина комплекта, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9083:  //Набрать_длину_с_нахлестом/Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 9097:  //Трудозатраты по площади 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11000:  //Для технологического кода контейнера 1/2
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11001:  //Если признак состава Арт.1 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11002:  //Если признак состава Арт.2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11005:  //Контейнер типа 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11009:  //Внешнее соединение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11010:  //Рассчитывать с Артикулом 1 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11020:  //Рассчитывать с Артикулом 2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11028:  //Диапозон веса заполнения, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11029:  //Расстояние узла от ручки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11066:  //Если текстура профиля Арт.1 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11070:  //Ставить однократно 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11072:  //Расчет по стороне 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 11095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12000:  //Для технологического кода контейнера 1/2
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12001:  //Если признак состава Арт.1 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12002:  //Если признак состава Арт.2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12005:  //Контейнер типа 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12009:  //Внешнее соединение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12010:  //Рассчитывать с Артикулом 1 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12020:  //Рассчитывать с Артикулом 2 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12027:  //Рассчитывать для профилей 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12028:  //Диапозон веса заполнения, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12030:  //[ * коэф-т ] 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12050:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12063:  //Углы реза по плоскости ригеля 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12064:  //Учёт в длине углов плоскостей 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12065:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12070:  //Ставить однократно 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12072:  //Расчет по стороне 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12075:  //Углы реза 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 12095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13001:  //Если признак состава 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13003:  //Тип проема 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13005:  //Заполнение типа 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13014:  //Угол ориентации стороны, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13015:  //Форма заполнения 
+                    if (paramRec.getStr(PAR3).equals(elemSimple.specificationRec.getParam("empty", 13015)) == false) { //нужно проверить
+                        return false;
+                    }
+                    break;
+                case 13017:  //Код системы содержит строку 
+                    Record sysprofRec = eSystree.find(iwin.nuni);
+                    if (sysprofRec.getStr(eSystree.pref).contains(paramRec.getStr(PAR3)) == false) {
+                        return false;
+                    }
+                    break;
+                case 13081:  //Для внешнего/внутреннего угла плоскости, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 13097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14000:  //Для технологического кода контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14001:  //Если признак состава 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14005:  //Тип проема 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14009:  //Арочное заполнение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14065:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14081:  //Если артикул профиля контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 14095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15000:  //Для технологического кода контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15001:  //Если признак состава 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15005:  //Тип проема 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15009:  //Арочное заполнение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15010:  //Расчет реза штапика 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15011:  //Расчет реза штапика 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15013:  //Подбор дистанционных вставок пролета 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15027:  //Рассчитывать для профиля 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15030:  //[ * коэф-т ] 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15040:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15045:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15050:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15051:  //Удлинение на один пог.м., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15055:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15081:  //Если артикул профиля контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 15095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21001:  //Форма контура 
+                    if (TypeElem.FULLSTVORKA == elemSimple.type() && "прямоугольная".equals(paramRec.getStr(PAR3)) == false) {
+                        return false;
+                    }
+                    break;
+                case 21004:  //Артикул створки 
+                    if (elemSimple.artiklRec.getStr(eArtikl.code).equals(paramRec.getStr(PAR3)) == false) {
+                        return false;
+                    }
+                    break;
+                case 21005:  //Артикул заполнения по умолчанию 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21010:  //Ограничение длины стороны, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21011:  //Ограничение длины ручка константа, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21012:  //Ограничение длины ручка вариацион, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21013:  //Ограничение длины ручка по середине, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21016:  //Допустимое соотношение габаритов б/м) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21037:  //Диапазон высоты вариационной ручки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21040:  //Ограничение угла, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21050:  //Ориентация стороны, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21085:  //Надпись на эскизе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 21088:  //Уравнивание складных створок 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24001:  //Форма контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24002:  //Если артикул створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24003:  //Если артикул цоколя 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24004:  //Если створка прилегает к артикулу 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24005:  //Коды текстуры створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24006:  //Установить текстуру 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24007:  //Коды текстуры ручки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24009:  //Коды текстуры подвеса 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24008:  //Если серия створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24010:  //Номер стороны 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24011:  //Расчет по общей арке 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24012:  //Направление открывания 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24013:  //Выбран авто расчет подвеса 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24032:  //Правильная полуарка 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24033:  //Фурнитура штульповая 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24036:  //Номер Стороны_X/Стороны_Y набора 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24037:  //Номер стороны по параметру набора 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24038:  //Проверять Cторону_L)/Cторону_W) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24039:  //Створка заднего плана 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24063:  //Диапазон веса, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24064:  //Ограничение высоты ручки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24070:  //Если высота ручки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24072:  //Ручка от низа створки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24073:  //Петля от низа створки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24074:  //Петля по центру стороны 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24075:  //Петля от верха створки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24077:  //Смещение замка от ручки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24078:  //Замок от края профиля, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24800:  //Код основной обработки) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24801:  //Доп.основная обработка
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24802:  //Код симметр. обработки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 24803:  //Доп.симметр. обработка
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25001:  //Форма контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25002:  //Если артикул створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25003:  //Если артикул цоколя 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25005:  //Коды текстуры створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25007:  //Коды текстуры ручки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25009:  //Коды текстуры подвеса 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25008:  //Если серия створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25010:  //Номер стороны 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25011:  //Расчет по общей арке 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25012:  //Направление открывания 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25013:  //Укорочение от 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25030:  //Укорочение, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25032:  //Правильная полуарка 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25033:  //Фурнитура штульповая 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25035:  //[ * коэф-т ] 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25036:  //Номер Стороны_ X/Стороны_ Y набора 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25037:  //Номер стороны по параметру набора 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25038:  //Проверять Cторону_ L/Cторону_ W 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25040:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25063:  //Диапазон веса, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25064:  //Ограничение высоты ручки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25070:  //Если высота ручки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25072:  //Ручка от низа створки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25800:  //Код основной обработки
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25801:  //Доп.основная обработка
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25802:  //Код симметр. обработки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 25803:  //Доп.симметр. обработка
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31000:  //Для технологического кода контейнера 
+                    Record sysprofRec2 = elemSimple.sysprofRec;
+                    Record artiklVRec = eArtikl.find(sysprofRec2.getInt(eSysprof.artikl_id), false);
+                    if (artiklVRec.get(eArtikl.tech_code) == null) {
+                        return false;
+                    }
+                    String[] strList = paramRec.getStr(PAR3).split(";");
+                    String[] strList2 = artiklVRec.getStr(PAR3).split(";");
+                    boolean ret2 = false;
+                    for (String str : strList) {
+                        for (String str2 : strList2) {
+                            if (str.equals(str2)) {
+                                ret2 = true;
+                            }
+                        }
+                    }
+                    if (ret2 == false) {
+                        return false;
+                    }
+                    break;
+                case 31001:  //Максимальное заполнение изделия, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31008:  //Эффективное заполнение изделия, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31002:  //Если профиль 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31003:  //Если соединенный артикул  T-обр.
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31004:  //Если прилегающий артикул 
+                    HashMap<String, ElemJoining> mapJoin = elemSimple.iwin().mapJoin;
+                    boolean ret = false;
+                    for (Map.Entry<String, ElemJoining> elemJoin : mapJoin.entrySet()) {
+                        ElemJoining el = elemJoin.getValue();
+                        if (TypeJoin.VAR4 == el.varJoin
+                                && el.joinElement1.artiklRec.equals(elemSimple.artiklRec)
+                                && el.joinElement2.artiklRec.equals(paramRec.getStr(PAR3))) {
+                            ret = true;
+                        }
+                    }
+                    if (ret == false) {
+                        return false;
+                    }
+                    break;
+                case 31005:  //Коды основной текстуры контейнера 
+                    if (Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color1) == false) {
+                        return false;
+                    }
+                    break;
+                case 31006:  //Коды внутр. текстуры контейнера 
+                    if (Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color2) == false) {
+                        return false;
+                    }
+                    break;
+                case 31007:  //Коды внешн. текстуры контейнера 
+                    if (Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color3) == false) {
+                        return false;
+                    }
+                    break;
+                case 31011:  //Толщина внешнего/внутреннего заполнения, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31014:  //Заполнения одинаковой толщины 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31015:  //Разбиение профиля по уровням 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31016:  //Зазор_на_метр,_мм/Размер_,мм терморазрыва 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31019:  //Правило подбора текстур 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31020:  //Ограничение угла к горизонту, ° 
+                    if (Constructiv.compareFloat(paramRec.getStr(PAR3), ((ElemSimple) elemSimple).anglHoriz) == false) {
+                        return false;
+                    }
+                    break;
+                case 31033:  //Если предыдущий артикул 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31034:  //Если следующий артикул 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31035:  //Уровень створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31037:  //Название фурнитуры содержит 
+                    if (TypeElem.FULLSTVORKA == elemSimple.owner().type()) {
+                        if (paramRec.getStr(PAR3).contains(elemSimple.artiklRec.getStr(eArtikl.name)) == false) {
+                            return false;
+                        }
+                    }
+                    break;
+                case 31040:  //Поправка габарита накладки, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31041:  //Ограничение длины профиля, мм 
+                    if (Constructiv.compareFloat(paramRec.getStr(PAR3), elemSimple.width()) == false) {
+                        return false;
+                    }
+                    break;
+                case 31050:  //Контейнер имеет тип 
+                    TypeElem type = elemSimple.type();
+                    if (type.value != Integer.valueOf(paramRec.getStr(PAR3))) {
+                        return false;
+                    }
+                    break;
+                case 31051:  //Если створка фурнитуры 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31052:  //Поправка в спецификацию, мм 
+                    if (elemSimple.layout() == LayoutArea.ARCH) {
+                        elemSimple.specificationRec.putParam(paramRec.getInt(PAR1), paramRec.getStr(PAR3));
+                    }
+                    break;
+                case 31054:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31055:  //Коды внутр. и внешн. текстуры изд. 
+                    if ((Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color2) == true
+                            && Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color3) == true) == false) {
+                        return false;
+                    }
+                    break;
+                case 31056:  //Коды внутр. или внеш. текстуры изд. 
+                case 37056:  //Коды внут. или внеш. текстуры изд. 
+                    if ((Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color2) == true
+                            || Constructiv.compareInt(paramRec.getStr(PAR3), elemSimple.color3) == true) == false) {
+                        return false;
+                    }
+                    break;
+                case 31057:  //Внутренняя текстура равна внешней 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31060:  //Допустимый угол между плоскостями, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31073:  //Отправочная марка фасада 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31074:  //На прилегающей створке 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31081:  //Для внешнего/внутреннего угла плоскости, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31090:  //Изменение сторон покраски 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31098:  //Бригада, участок) 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31080:  //Сообщение-предупреждение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31800:  //Код обработки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 31801:  //Доп.обработки
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33000:  //Для технологического кода контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33001:  //Если признак состава 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33002:  //Расчет пролетов соединений 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33003:  //Расчет пролетов заполнений, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33004:  //Расчет от длины профиля стойки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33005:  //Коды основной текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33006:  //Коды внутр. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33007:  //Коды внешн. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33011:  //Толщина внешнего/внутреннего заполнения, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33031:  //Расчет количества 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33032:  //Периметр покраски по периметру 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33033:  //Расход по профилю 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33034:  //Периметр покраски, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33035:  //Расход по поверхности на кв.м. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33036:  //Коэффициент_расхода 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33062:  //Если стойка удлинена 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33063:  //Диапазон веса створки, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33066:  //Если номер стороны в контуре 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33071:  //Контейнер типа 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33074:  //На прилегающей створке 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33078:  //Ставить однократно 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33081:  //Для внешнего/внутреннего угла плоскости, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33073:  //Отправочная марка фасада 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 33099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34000:  //Для технологического кода контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34001:  //Если признак состава 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34002:  //Расчет пролетов соединений 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34003:  //Расчет пролетов заполнений, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34004:  //Расчет от длины профиля стойки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34005:  //Коды основной текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34006:  //Коды внутр. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34007:  //Коды внешн. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34010:  //Расчет армирования 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34012:  //Для варианта соединения Т*
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34009:  //Если два присоединенных артикула 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34008:  //Эффективное заполнение изделия, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34011:  //Толщина внешнего/внутреннего заполнения, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34013:  //Подбор дистанционных вставок по пролетам 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34015:  //Расчет длины по 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34016:  //Прилегание контура створки 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34030:  //[ * коэф-т ] 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34049:  //Поправка по нормали от начала/конца, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34050:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34051:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34052:  //Поправка не прямого угла импоста, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34061:  //Расчет количества 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34062:  //Если стойка удлинена 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34063:  //Диапазон веса створки, кг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34064:  //Учёт поправок соединений для составов 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34066:  //Если номер стороны в контуре 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34070:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34071:  //Контейнер типа 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34072:  //Смещение от уровня деления, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34073:  //Отправочная марка фасада 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34074:  //На прилегающей створке 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34075:  //Углы реза 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34077:  //Задать Угол_реза_1/Угол_реза_2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34078:  //Ставить однократно 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34079:  //Длина подбирается из списка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34080:  //Длина округляется с шагом, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34081:  //Для внешнего/внутреннего угла плоскости, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34097:  //Трудозатраты по длине 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 34099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37001:  //Установка жалюзи 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37002:  //Если артикул профиля контура 
+                    if (LayoutArea.ARCH == elemSimple.layout() && "арочный".equals(paramRec.getStr(PAR3)) == false) {
+                        return false;
+                    } else if (LayoutArea.ARCH != elemSimple.layout() && "прямой".equals(paramRec.getStr(PAR3)) == false) {
+                        return false;
+                    }
+                    break;
+                case 37005:  //Коды основной текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37006:  //Коды внутр. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37007:  //Коды внешн. текстуры контейнера 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37008:  //Тип проема 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37009:  //Тип заполнения 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37010:  //Ограничение ширины/высоты листа, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37030:  //Ограничение площади, кв.м. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37042:  //Допустимое соотношение габаритов б/м
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37054:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37055:  //Коды внутр. и внешн. текстуры изд. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37080:  //Сообщение-предупреждение 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37085:  //Надпись на элементе 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37098:  //Бригада участок
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37097:  //Трудозатраты по 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37108:  //Коэффициенты АКЦИИ 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37310:  //Сопротивление теплопередаче, м2*°С/Вт 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37320:  //Воздухопроницаемость, м3/ ч*м2
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37330:  //Звукоизоляция, дБА 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37340:  //Коэффициент пропускания света 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37350:  //Сопротивление ветровым нагрузкам, Па 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 37351:  //Номер поверхности 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38004:  //Расчет 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38010:  //Номер стороны 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38037:  //Название фурнитуры содержит 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38039:  //Для типа открывания 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38040:  //Порог расчета, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38050:  //Шаг, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38060:  //Количество на шаг 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38081:  //Если артикул профиля контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38108:  //Применять коэффициенты АКЦИИ для МЦ 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38109:  //Возможное управление жалюзи 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 38113:  //Установить текстуру по 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39002:  //Номер стороны 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39005:  //Расчет 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39020:  //Поправка, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39030:  //[ * коэф-т ] 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39037:  //Название фурнитуры содержит 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39039:  //Для типа открывания 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39063:  //Округлять количество до ближайшего 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39070:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39075:  //Углы реза 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39077:  //Задать Угол_реза_1/Угол_реза_2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39080:  //Шаг вагонки ламели, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39081:  //Если артикул профиля контура 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39093:  //Поперечину ставить : 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39097:  //Трудозатраты по периметру 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39099:  //Трудозатраты, ч/ч. 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39108:  //Применять коэффициенты АКЦИИ для МЦ 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39109:  //Возможное управление жалюзи 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 39113:  //Установить текстуру по 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40004:  //Ширина заполнения, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40005:  //Поправка ширины/высоты, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40006:  //Высота заполнения, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40007:  //Высоту сделать длиной 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40008:  //Эффективное заполнение изд., мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40010:  //Поправка на стороны четные/нечетные, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40037:  //Название фурнитуры содержит 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40067:  //Коды основной текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40068:  //Коды внутр. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40069:  //Коды внешн. текстуры изделия 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40108:  //Применять коэффициенты АКЦИИ для МЦ 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40109:  //Возможное управление жалюзи 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 40113:  //Установить текстуру по 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50010:  //Расчет сторон 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50013:  //Выполняется условие 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50029:  //Расчёт по свободным коробкам 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50030:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 50090:  //Диапазон макс. ширины откоса, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51010:  //Расчет сторон 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51013:  //Выполняется условие 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51070:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51072:  //Ширина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51075:  //Радиус, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51077:  //Задать Угол_реза_1/Угол_реза_2, ° 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51085:  //Округление длины/ширины с шагом, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 51090:  //Диапазон макс. ширины откоса, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52010:  //Расчет сторон 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52013:  //Выполняется условие 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52017:  //Код системы содержит строку 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52060:  //Количество 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52070:  //Длина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52080:  //Ширина, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52085:  //Округление длины/ширины с шагом, мм 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52095:  //Если признак системы конструкции 
+                    message(paramRec.getInt(PAR1));
+                    break;
+                case 52090:  //Диапазон макс. ширины откоса, мм");
+                    message(paramRec.getInt(PAR1));
+                    break;
+                default:
+                    message(paramRec.getInt(PAR1));
+                    break;
+            };
+        }
+        return true;
+    }
+
+    //Все варианты вместе
+    public static int[] paramSum = {13015, 13017, 13081, 13099, 31000, 31001, 31002, 31003, 31004, 31005, 31006, 31007, 31008, 31015, 31016, 31020,
+            31033, 31034, 31037, 31041, 31050, 31052, 31055, 31056, 31080, 31085, 31090, 31095, 31097, 31099, 37001, 37002, 37009, 37010, 37030,
+            37042, 37056, 37080, 37085, 37099};
+
+    //Все спецификации вместе
+    public static int[] paramSum = {
+            11000, 11009, 11010, 11020, 11030, 11040, 11050, 11060, 11067, 11068, 11069, 11070, 11072, 11095, 12000, 12008, 12010, 12020, 12030, 12050, 12060,
+            12063, 12065, 12068, 12069, 12070, 12072, 12075, 14000, 14030, 14040, 14050, 14060, 14065, 14068, 15000, 15005, 15011, 15013, 15027, 15030, 15040,
+            15045, 15050, 15055, 15068, 15069, 24001, 24002, 24004, 24006, 24010, 24012, 24030, 24033, 24038, 24063, 24067, 24068, 24069, 24070, 24072, 24073, 24074, 24075, 24095,
+            24099, 25002, 25010, 25013, 25030, 25035, 25040, 25060, 25067, 33000, 33005, 33008, 33030, 33040, 33050, 33060, 33066, 33067, 33069, 33078, 33095, 34000, 34004, 34005, 34006,
+            34007, 34008, 34010, 34011, 34015, 34030, 34051, 34060, 34066, 34067, 34068, 34069, 34070, 34071, 34075, 34095, 34099, 38004, 38010, 38030, 38050,
+            38060, 38067, 38068, 38069, 39002, 39005, 39020, 39060, 39068, 39069, 39075, 39077, 39093, 40010, 40067, 40068, 40069};
+
+    //Соединения
+    public static int[] parCons = {11000, 11009, 11010, 11020, 11030, 11040, 11050, 11060, 11067, 11068, 11069, 11070, 11072, 11095,
+            12000, 12008, 12010, 12020, 12030, 12050, 12060, 12063, 12065, 12068, 12069, 12070, 12072, 12075};
+    //Составы
+    public static int[] parVsts = {33000, 33005, 33008, 33030, 33040, 33050, 33060, 33066, 33067, 33069, 33078, 33095, 34000, 34004, 34005,
+            34006, 34007, 34008, 34010, 34011, 34015, 34030, 34051, 34060, 34066, 34067, 34068, 34069, 34070, 34071, 34075, 34095, 34099,
+            38004, 38010, 38030, 38050, 38060, 38067, 38068, 38069, 39002, 39005, 39020, 39060, 39068, 39069, 39075, 39077, 39093,
+            40010, 40067, 40068, 40069};
+    //Заполнения
+    public static int[] parGlas = {14000, 14030, 14040, 14050, 14060, 14065, 14068, 15000, 15005, 15011, 15013, 15027, 15030, 15040,
+            15045, 15050, 15055, 15068, 15069};
+    //фурнитура
+    public static int[] parFurs = {24001, 24002, 25002, 24004, 24006, 24010, 25010, 24012, 24030, 25030, 24033, 24038, 24063, 24067, 25067, 24068, 24069, 24070, 24072, 24073, 24074, 24075,
+            24095, 24099, 25013, 25035, 25040, 25060, 25067};*/
