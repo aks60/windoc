@@ -1,3 +1,5 @@
+﻿    
+
     public boolean check(ElemSimple elemSimple, List<Record> tableList) {
         for (Record paramRec : tableList) {
             switch (paramRec.getInt(PAR1)) {
