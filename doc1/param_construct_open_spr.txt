@@ -21,17 +21,18 @@ eElemgrp.level = 1 -> 31000
 eElemgrp.level = 5 -> 37000
 Par2 список параметров(спецификаций)
 Если eElemgrp.level = 1 то...
-eArtikl.level1 =  1 -> 39000
-eArtikl.level1 =  2 -> 38000
-eArtikl.level1 =  3 -> 39000
-eArtikl.level1 =  4 -> 38000
-eArtikl.level1 =  5 -> 40000
-Если eElemgrp.level = 5 то...
 eArtikl.level1 =  1 -> 34000
 eArtikl.level1 =  2 -> 33000
 eArtikl.level1 =  3 -> 34000
 eArtikl.level1 =  4 -> 33000
 eArtikl.level1 =  5 -> 40000
+Если eElemgrp.level = 5 то...
+eArtikl.level1 =  1 -> 39000
+eArtikl.level1 =  2 -> 38000
+eArtikl.level1 =  3 -> 39000
+eArtikl.level1 =  4 -> 38000
+eArtikl.level1 =  5 -> 40000
+
 ИТОГО: 31000б 33000, 34000, 37000, 38000, 39000, 40000
 
  ЗАПОЛНЕНИЯ
@@ -55,4 +56,4 @@ eArtikl.level1 =  5 -> 40000
 ИТОГО: 21000, 24000, 25000
 
 ИТОГО: 1000, 2000, 3000, 4000, 11000, 12000 :13000, 14000, 15000 :21000, 24000, 25000 :31000б 33000, 34000, 37000, 38000, 39000, 40000
-ПРПУЩЕНО: 7000, 8000, 9000, 50000, 51000, 52000
+ПРОПУЩЕНО: 7000, 8000, 9000, 50000, 51000, 52000
