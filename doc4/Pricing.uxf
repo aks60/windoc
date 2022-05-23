@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>99</x>
+      <y>11</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>99</x>
+      <y>22</y>
+      <w>33</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>253</x>
+      <y>11</y>
+      <w>242</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>Порядок ценообразования
+fg=black
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>33</x>
+      <y>66</y>
+      <w>176</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Коэффициент осн. 
+внутр.внешн.текстуры</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>33</x>
+      <y>132</y>
+      <w>176</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Сложение цен по 
+трём текстурам</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>275</x>
+      <y>66</y>
+      <w>352</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>В случае равенства внешней и внутренней 
+текстур проводится проверка значения в 
+поле "Двухстор." и если это значение не 
+равно нулю сложение стоимостей внешней и 
+внутренней текстур для МЦ не производится, 
+а подставляется значение поля "Двухстор."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>121</y>
+      <w>99</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;70.0;10.0</additional_attributes>
+  </element>
+</diagram>
