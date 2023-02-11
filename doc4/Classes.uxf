@@ -1,355 +1,385 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>20</y>
-      <w>140</w>
-      <h>270</h>
+      <x>296</x>
+      <y>56</y>
+      <w>104</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>Com5t
 --
-listChild
-layout
-owner
-iwin
+id
 type
+layout
 sysprofRec
-articlRec
-specificationRec
-mapParam
+artiklRec
+artiklRecAn    
+owner
+winc
+root
+gson
+x1, y1, x2, y2   
+colorID1
+colorID2
+colorID3;
 --
-root()
-listChild()
-typeElem()
-layout()
-paint()</panel_attributes>
+...
+...
+bg=YELLOW</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>80</y>
-      <w>130</w>
-      <h>150</h>
+      <x>168</x>
+      <y>72</y>
+      <w>104</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>AreaSimple
 -
-mapFrame
+form
+childs
+frames
 -
-listElem()
-joinFrame()
-joinElem()
-addFrame()
-paint()</panel_attributes>
+addFilling()
+joining()
+draw()
+...
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>360</y>
-      <w>100</w>
-      <h>90</h>
+      <x>32</x>
+      <y>208</y>
+      <w>80</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>AreaArch
 -
 radiusArch
 -
-joinFrame()
-</panel_attributes>
+addFilling()
+joining()
+
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>100</y>
-      <w>100</w>
-      <h>110</h>
+      <x>688</x>
+      <y>88</y>
+      <w>80</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>ElemSimple
 -
+nglCut[]
+anglFlat
 anglHoriz
+spcRec
+borderColor
 -
-useArtiklTo()
-inside()
-anglCut()
+joinPoint()
+joinFlat()
+joinElem()
 
 
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>150</y>
-      <w>400</w>
-      <h>30</h>
+      <x>392</x>
+      <y>184</y>
+      <w>312</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;380.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;370.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>740</x>
-      <y>200</y>
-      <w>110</w>
-      <h>160</h>
+      <x>672</x>
+      <y>224</y>
+      <w>80</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>80.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>120</y>
-      <w>100</w>
-      <h>30</h>
+      <x>264</x>
+      <y>104</y>
+      <w>48</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>40.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>140</x>
-      <y>360</y>
-      <w>100</w>
-      <h>90</h>
+      <x>32</x>
+      <y>464</y>
+      <w>80</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>AreaSquare
+    <panel_attributes>AreaRectangl
 -
 
 -
-joinFrame()
-</panel_attributes>
+joining()
+
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>350</y>
-      <w>100</w>
-      <h>120</h>
+      <x>184</x>
+      <y>336</y>
+      <w>80</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>AreaStvorca
 -
+sysfurnRec
+handleRec
+loopRec
+lockRec
+handleColor
+loopColor
+lockColor
 handleHeight
 typeOpen
+handleLayout   
+paramCheck[]
+offset[]
 -
-joinFrame()
+joining()
 paint()
-</panel_attributes>
+
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>340</y>
-      <w>100</w>
-      <h>150</h>
+      <x>640</x>
+      <y>288</y>
+      <w>80</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>ElemFrame
 -
-length
-anglCut1
-anglCut2
+lengthArch
 -
-useArtiklTo()
-anglCut()
+setSpecific()
+addSpecific()
 paint()
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>350</y>
-      <w>100</w>
-      <h>120</h>
+      <x>640</x>
+      <y>416</y>
+      <w>80</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>ElemGlass
 -
-xx
+radiusGlass
+gzazo
+sideHoriz[]
+gsize[]
 -
-useArtiklTo()
+setSpecific()
+addSpecific()
 paint()
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>820</x>
-      <y>200</y>
-      <w>90</w>
-      <h>170</h>
+      <x>696</x>
+      <y>224</y>
+      <w>56</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;150.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;240.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
-      <y>220</y>
-      <w>110</w>
-      <h>160</h>
+      <x>64</x>
+      <y>184</y>
+      <w>192</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>220.0;10.0;10.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>220</y>
-      <w>60</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;40.0;140.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>140</x>
-      <y>220</y>
-      <w>220</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;200.0;130.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>960</x>
-      <y>350</y>
-      <w>100</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>ElemImpost
--
-anglCut1
-anglCut2
--
-useArtiklTo()
-anglCut()
-paint()
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>830</x>
-      <y>200</y>
+      <x>64</x>
+      <y>184</y>
       <w>200</w>
-      <h>170</h>
+      <h>296</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;180.0;150.0</additional_attributes>
+    <additional_attributes>230.0;10.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>184</y>
+      <w>40</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>940</x>
-      <y>40</y>
-      <w>100</w>
-      <h>220</h>
+      <x>744</x>
+      <y>416</y>
+      <w>80</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>ElemCross
+-
+truncation
+-
+setSpecific()
+addSpecific()
+paint()
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>736</x>
+      <y>224</y>
+      <w>64</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>416</y>
+      <w>80</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>ElemJoining
 -
-iwin
-typeJoin
-varJoin
-joinElement1
-joinElement2
-cutAngl1
-cutAngl2
-anglProf
+id
+winc
+joiningRec
+joinvarRec
+layout
+type
+vid
+elem1, elem2
+angl
 -
-joinAngl()
-joinVar()
-joinElem()
+addSpecific()
 
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>500</y>
-      <w>100</w>
-      <h>90</h>
+      <x>32</x>
+      <y>296</y>
+      <w>80</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>AreaTrapeze
 -
 
 -
-joinFrame()
+addFilling()
+joining()
 
 
-</panel_attributes>
+
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>80</x>
-      <y>220</y>
-      <w>100</w>
-      <h>300</h>
+      <y>184</y>
+      <w>184</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;280.0</additional_attributes>
+    <additional_attributes>210.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>500</y>
-      <w>100</w>
-      <h>90</h>
+      <x>32</x>
+      <y>384</y>
+      <w>80</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>AreaTriangl
 -
 
 -
-joinFrame()
-</panel_attributes>
+joining()
+
+bg=MAGENTA</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>220</y>
-      <w>150</w>
-      <h>300</h>
+      <x>72</x>
+      <y>184</y>
+      <w>192</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;130.0;280.0</additional_attributes>
+    <additional_attributes>220.0;10.0;10.0;250.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>500</y>
-      <w>100</w>
-      <h>110</h>
+      <x>640</x>
+      <y>560</y>
+      <w>80</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>PaintPanel
 -
@@ -360,16 +390,17 @@ saveImage()
 paintComponent()
 
 
-</panel_attributes>
+
+bg=CYAN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>10</y>
-      <w>110</w>
-      <h>130</h>
+      <x>552</x>
+      <y>88</y>
+      <w>88</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Specification
 --
@@ -377,79 +408,362 @@ owner
 specificationList
 mapParam
 artiklRec 
---</panel_attributes>
+--
+bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>60</y>
-      <w>230</w>
-      <h>50</h>
+      <x>392</x>
+      <y>128</y>
+      <w>176</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=0..1
 specificationRec to cpecif
 </panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
+      <x>472</x>
       <y>200</y>
-      <w>150</w>
-      <h>540</h>
+      <w>144</w>
+      <h>464</h>
     </coordinates>
     <panel_attributes>Wincalc
 --
 conn
 nuni
-artiklRec
-sysconsRec
+artiklRec  
+syssizeRec
 genId
-
-width
-height
-heightAdd
-colorNone
-color1
-color2
-color3
-
-bufferByte
+script
+width1, width2
+height1, height2
+colorID1, colorID2, colorID3
+costpric1, costpric2
+price
+cost2
+weight
 bufferImg
+imageIcon
 gc2d
-scale1, scale2
-labelSketch
-
-rootArea
-mapParamDef
-listCom5t
-listElem
-listArea
+scale
+rootArea, rootGson
+form
+mapPardef
+listArea, listElem, listAll
 mapJoin
 listSpec
-
-constructiv
-tariffication
---</panel_attributes>
+kitsSpec
+calcJoining 
+calcElements
+calcFilling
+calcFurniture
+calcTariffication; 
+--
+build()
+parsing()
+elements()
+constructiv()
+bg=ORANGE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>240</y>
-      <w>160</w>
-      <h>50</h>
+      <x>392</x>
+      <y>232</y>
+      <w>96</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=0..1
 iwin to wincalc</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>552</y>
+      <w>80</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>AreaDoor
+-
+
+-
+joining()
+
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>184</y>
+      <w>192</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>640</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>AreaVitrazh
+-
+
+-
+joining()
+
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>184</y>
+      <w>192</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>152</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>80</y>
+      <w>112</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>IElem5e
+(Interface)
+--
+setLocation()
+setSpecific()
+addSpecific()
+joinElem()
+joinFlat()
+joinPoint()
+anglFlat()
+anglHoriz()
+spcRec()
+anglHoriz()
+anglCut()
+def sideHoriz()
+def gsize()
+def gzazo()
+def gzazo()
+def radiusGlass()
+def mouseClick()
+toString()
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>40</y>
+      <w>104</w>
+      <h>456</h>
+    </coordinates>
+    <panel_attributes>ICom5t
+(Interface)
+--
+TRANSLATE_XY
+--
+def id()
+def owner()
+def root()
+def gson()
+def winc()
+def colorID1()
+def colorID2()
+def colorID3()
+def layout()
+def layout(*)
+def sysprofRec()
+def sysprofRec(*)
+def artiklRec()
+def artiklRec(*)
+def artiklRecAn()
+def artiklRecAn(*)
+def paint()
+def setDimension()
+def type()
+def height()
+def width()
+def length()
+def x1()
+def x2()
+def y1()
+def y2()
+def lengthX()
+def lengthY()
+def inside()
+def isJson(*)
+def isJson(**)
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>88</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>56</y>
+      <w>576</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;700.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>32</y>
+      <w>80</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>IArea5e
+(Interfece)
+--
+draw()
+initСonstructiv()
+addFilling()
+joining()
+frames()
+childs()
+resizeX()
+resizeY()
+type()
+
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>104</x>
+      <y>88</y>
+      <w>80</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>104</x>
+      <y>32</y>
+      <w>864</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;1060.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>320</x>
+      <y>0</y>
+      <w>176</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Диаграма классов
+fg=black
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>296</x>
+      <y>328</y>
+      <w>104</w>
+      <h>368</h>
+    </coordinates>
+    <panel_attributes>IStvorka
+(Interfece)
+--
+handleColor()
+handleColor()
+handleHeight()
+handleHeight()
+handleLayout()
+handleLayout()
+handleRec()
+handleRec()
+initFurniture()
+joining()
+lockColor()
+lockColor()
+lockRec()
+lockRec()
+loopColor()
+loopColor()
+loopRec()
+loopRec()
+offset();
+paint()
+paramCheck();
+paramCheck()
+sysfurnRec()
+typeOpen()
+typeOpen()
+
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>336</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
   </element>
 </diagram>
