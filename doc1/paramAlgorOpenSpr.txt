@@ -17,16 +17,16 @@ eArtikl.level1 = 5 - нет такого списка в артикулах со
 
 СОСТАВЫ
 PAR1 СПИСОК ПАРАМЕТРОВ(ВАРИАНТОВ)
-eElemgrp.level = 1 -> 31000
-eElemgrp.level = 5 -> 37000
+eGroups.npp = 1 -> 31000
+eGroups.npp = 5 -> 37000
 PAR2 СПИСОК ПАРАМЕТРОВ(СПЕЦИФИКАЦИЙ)
-Если eElemgrp.level = 1 то...
+Если eGroups.npp = 1 то...
 eArtikl.level1 =  1 -> 34000
 eArtikl.level1 =  2 -> 33000
 eArtikl.level1 =  3 -> 34000
 eArtikl.level1 =  4 -> 33000
 eArtikl.level1 =  5 -> 40000
-Если eElemgrp.level = 5 то...
+Если eGroups.npp = 5 то...
 eArtikl.level1 =  1 -> 39000
 eArtikl.level1 =  2 -> 38000
 eArtikl.level1 =  3 -> 39000

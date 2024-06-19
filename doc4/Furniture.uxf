@@ -124,7 +124,7 @@ bg=red</panel_attributes>
     <coordinates>
       <x>440</x>
       <y>220</y>
-      <w>100</w>
+      <w>120</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -208,7 +208,7 @@ bg=red</panel_attributes>
     <coordinates>
       <x>390</x>
       <y>120</y>
-      <w>50</w>
+      <w>60</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -276,8 +276,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>240</x>
-      <y>570</y>
+      <x>530</x>
+      <y>530</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
