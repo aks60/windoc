@@ -274,7 +274,7 @@ lt=.</panel_attributes>
     </coordinates>
     <panel_attributes>ARTDET.Тариф МЦ
 --
-Системы=&gt;Артикулы
+Модели=&gt;Артикулы
 bg=pink
 lt=.</panel_attributes>
     <additional_attributes/>
@@ -322,7 +322,7 @@ lt=.</panel_attributes>
     </coordinates>
     <panel_attributes>ARTIKL.Матер.ценности
 --
-Системы=&gt;Артикулы
+Модели=&gt;Артикулы
 bg=pink
 lt=.</panel_attributes>
     <additional_attributes/>
@@ -360,7 +360,7 @@ lt=.</panel_attributes>
     <panel_attributes>GROUPS.Группы
 --
 Настройки=&gt;Коэф
-Системы=&gt;Артикулы
+Модели=&gt;Артикулы
 bg=CYAN
 lt=.</panel_attributes>
     <additional_attributes/>
@@ -785,7 +785,7 @@ bg=yellow</panel_attributes>
     </coordinates>
     <panel_attributes>SYSTREE.Дерево сист.проф.
 --
-Системы=&gt;Системы
+Модели=&gt;Системы
 bg=BLUE
 lt=.</panel_attributes>
     <additional_attributes/>
@@ -858,7 +858,7 @@ lt=.</panel_attributes>
     </coordinates>
     <panel_attributes>ARTDET.Тариф МЦ
 --
-Системы=&gt;Артикулы
+Модели=&gt;Артикулы
 bg=pink
 lt=.</panel_attributes>
     <additional_attributes/>
